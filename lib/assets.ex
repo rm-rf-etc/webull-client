@@ -1,4 +1,4 @@
-defmodule WebullClient do
+defmodule WebullClient.Assets do
   @ticker_base_url "https://quotes-gw.webullbroker.com/api/search/pc/tickers"
   @screener_url 'https://userapi.webullbroker.com/api/wlas/screener/ng/query'
   @headers [

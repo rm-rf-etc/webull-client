@@ -22,7 +22,8 @@ defmodule WebullClient.MixProject do
   defp deps do
     [
       {:jason, "~> 1.0"},
-      {:httpoison, "~> 1.6"}
+      {:httpoison, "~> 1.6"},
+      {:retry, "~> 0.14.0"}
     ]
   end
 end

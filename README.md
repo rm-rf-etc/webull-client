@@ -18,3 +18,13 @@ def deps do
   ]
 end
 ```
+
+## Example Use
+
+The scanner is only coded for getting stocks within a cap range:
+```elixir
+tickers =
+  WebullClient.Assets.scanner(50_000_000, 150_000_000)
+  |> elem(0)
+  |> Enum.map(&WebullClient.Assets.kept_keys/1)
+```
